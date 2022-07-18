@@ -1,0 +1,18 @@
+.header {
+    border-bottom: 1px solid $gray;
+    align-items: center;
+    padding: .4rem;
+    &__box {
+    display: flex;
+    justify-content: space-between;
+    }
+    &__logo {
+        img {
+            width: 140px;
+        }
+    }
+    &__login__btn {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0rem 1rem;
+}
+
+.main__title {
+  padding: 2rem 0rem;
+}
+
+.main__h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.main__text {
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.header {
+  border-bottom: 1px solid #dddddd;
+  align-items: center;
+  padding: 0.4rem;
+}
+.header__box {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo img {
+  width: 140px;
+}
+.header__login__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.login__button a {
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.login__button__box {
+  display: flex;
+  position: relative;
+}
+.login__button__id {
+  background-color: #ff6600;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+}
+.login__button__dropdown {
+  background-color: #e5e5e5;
+  border-radius: 3rem;
+  height: 40px;
+  width: 60px;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+}
+.login__button__dropdown img {
+  width: 25px;
+  padding: 0rem 0.4rem;
+  z-index: 2;
+}
+.login__button__state {
+  background-color: #85b300;
+  padding: 0.35rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 1.5rem;
+}
+
+.cards__deck {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card__item {
+  border: 1px solid #dddddd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex-grow: 1;
+  max-width: 350px;
+  width: 100%;
+}
+
+.card__title .title__item {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.card__title p {
+  font-size: 0.872rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.card__number .number__item {
+  font-size: 1.56rem;
+  font-weight: 700;
+}
+
+.card__detail {
+  margin-bottom: 0.5rem;
+}
+
+.detail__table {
+  display: table;
+  text-align: center;
+}
+
+.detail__row {
+  display: table-row;
+  padding: 0.2rem 1rem;
+}
+
+.detail__row--head .detail__cell {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.detail__cell {
+  display: table-cell;
+  padding: 0.2rem 0.5rem;
+  font-weight: 500;
+}
+
+.card__buttons {
+  padding: 0.8rem 0rem;
+  padding-bottom: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card__buttons a {
+  background-color: #FF8C40;
+  padding: 0.5rem 1.8rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.card__terms {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  color: #4F4F4F;
+  font-weight: 300;
+}
+
+@media (max-width: 780px) {
+  .card__item {
+    max-width: 100%;
+    width: 100%;
+  }
+  .card__buttons, .card__terms {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .card__buttons a {
+    width: 100%;
+    text-align: center;
+  }
+  .card__terms {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

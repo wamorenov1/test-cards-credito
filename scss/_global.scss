@@ -1,0 +1,20 @@
+$font-family: 'Roboto', sans-serif;
+$gray: #dddddd;
+$gray-300: #4F4F4F;
+$orange-300:#FF8C40;
+$orange-400: #ff6600;
+$text-xl: 4rem;
+$white: #FFFFFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body {
+    font-family: $font-family;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0rem 1rem;
+}

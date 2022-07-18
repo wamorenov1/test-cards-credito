@@ -1,0 +1,47 @@
+$size-button: 40px;
+.login__button {
+    a {
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+    &__box {
+        display: flex;
+        position: relative;
+    }
+    &__id {
+        background-color: $orange-400;
+        border-radius: 50%;
+        height: $size-button;
+        width: $size-button;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0px;
+    }
+    &__dropdown {
+        background-color: #e5e5e5;
+        border-radius: 3rem;
+        height: $size-button;
+        width: $size-button + 20px;
+        position: relative;
+        z-index: -1;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            width: 25px;
+            padding: 0rem .4rem;
+            z-index: 2;
+        }
+    }
+    &__state {
+        background-color: #85b300;
+        padding: .35rem;
+        border-radius: 1rem;
+        position: absolute;
+        bottom: 0;
+        left: 1.5rem;
+    }
+}
