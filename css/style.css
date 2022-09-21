@@ -150,7 +150,7 @@ body {
 }
 
 .card__item {
-  border: 1px solid #dddddd;
+  border: 1px solid #FFB380;
   padding: 1.5rem;
   border-radius: 10px;
   flex-grow: 1;
@@ -162,6 +162,7 @@ body {
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 0.8rem;
+  color: #FF8C40;
 }
 .card__title p {
   font-size: 0.872rem;
@@ -195,8 +196,9 @@ body {
 
 .detail__cell {
   display: table-cell;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.25rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .card__buttons {
@@ -217,7 +219,7 @@ body {
 }
 
 .card__terms {
-  padding-top: 1.5rem;
+  padding-top: 1.2rem;
   display: flex;
   justify-content: space-between;
   font-size: 0.6rem;
